@@ -4,48 +4,36 @@ namespace Pets.Models
 {
     public class Pet : IPet
     {
-        private readonly int _id;
+        public int Id { get; set; }
 
-        private readonly string _name;
+        public string Name { get; set; }
 
-        private readonly string _species;
+        public string Species { get; set; }
 
-        private readonly string _sex;
+        public string Sex { get; set; }
 
-        private readonly int _age;
+        public int Age { get; set; }
 
-        private readonly string _breed;
-
-        public int Id => _id;
-
-        public string Name => _name;
-
-        public string Species => _species;
-
-        public string Sex => _sex;
-
-        public int Age => _age;
-
-        public string Breed => _breed;
+        public string Breed { get; set; }
 
         public Pet()
         {
-            _id = 0;
-            _name = string.Empty;
-            _species = string.Empty;
-            _sex = string.Empty;
-            _age = 0;
-            _breed = string.Empty;
+            Id = 0;
+            Name = string.Empty;
+            Species = string.Empty;
+            Sex = string.Empty;
+            Age = 0;
+            Breed = string.Empty;
         }
 
         public Pet(int id, string name, string species, string sex, int age, string breed)
         {
-            _id = id;
-            _name = string.IsNullOrWhiteSpace(name) ? string.Empty : name;
-            _species = string.IsNullOrWhiteSpace(species) ? string.Empty : species;
-            _sex = string.IsNullOrWhiteSpace(sex) ? string.Empty : sex;
-            _age = age;
-            _breed = string.IsNullOrWhiteSpace(breed) ? string.Empty : breed;
+            Id = id;
+            Name = string.IsNullOrWhiteSpace(name) ? string.Empty : name;
+            Species = string.IsNullOrWhiteSpace(species) ? string.Empty : species;
+            Sex = string.IsNullOrWhiteSpace(sex) ? string.Empty : sex;
+            Age = age;
+            Breed = string.IsNullOrWhiteSpace(breed) ? string.Empty : breed;
         }
     }
 }

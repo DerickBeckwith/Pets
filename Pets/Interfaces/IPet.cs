@@ -5,31 +5,31 @@
         /// <summary>
         /// The pet's unique identifier.
         /// </summary>
-        int Id { get; }
+        int Id { get; set; }
 
         /// <summary>
         /// The name of the pet.
         /// </summary>
-        string Name { get; }
+        string Name { get; set; }
 
         /// <summary>
         /// The name of the pet's species.
         /// </summary>
-        string Species { get; }
+        string Species { get; set; }
 
         /// <summary>
         /// Male or Female.
         /// </summary>
-        string Sex { get; }
+        string Sex { get; set; }
 
         /// <summary>
         /// Age in months.
         /// </summary>
-        int Age { get; }
+        int Age { get; set; }
 
         /// <summary>
         /// The name of the pet's breed.
         /// </summary>
-        string Breed { get; }
+        string Breed { get; set; }
     }
 }
